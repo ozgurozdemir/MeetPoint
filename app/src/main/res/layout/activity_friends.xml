@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <RelativeLayout
+        android:id="@+id/eventListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friendDivision"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/division">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff000000"
+                android:alpha="0.5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Friends"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/background"
+                android:padding="5dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <EditText
+            android:padding="10dp"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="10dp"
+            android:hint="Seach Friend"
+            android:textSize="18sp"
+            android:layout_below="@id/division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Add Friend"
+            android:id="@+id/searchMyFriend"
+            android:singleLine="true"
+            android:maxLength="25"></EditText>
+
+        <ListView
+            android:layout_below="@id/searchMyFriend"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/myFriendsList"></ListView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@id/friendDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/division1"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff000000"
+                android:alpha="0.5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Friends"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/background"
+                android:padding="5dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <EditText
+            android:padding="10dp"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="10dp"
+            android:hint="Seach People"
+            android:textSize="18sp"
+            android:layout_below="@id/division1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Add Friend"
+            android:id="@+id/searchPeople"
+            android:singleLine="true"
+            android:maxLength="25"></EditText>
+
+        <ListView
+            android:transcriptMode="alwaysScroll"
+            android:layout_below="@+id/searchPeople"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/peopleList"></ListView>
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Long Press For Context Menu"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/side_bar"/>
+
+
+
+</android.support.v4.widget.DrawerLayout>

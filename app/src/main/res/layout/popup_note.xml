@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Note"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/noteTxt"
+        android:layout_margin="20dp"
+        android:gravity="start|top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Additional Note (Optional)"
+        android:maxLength="120"
+        />
+
+    <Button
+        android:id="@+id/okNoteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:gravity="end|center"
+        android:paddingRight="50dp"
+        android:paddingBottom="20dp"
+        android:layout_weight="50"
+        android:background="@color/background"
+        android:textColor="@color/colorAccent"/>
+
+
+</LinearLayout>

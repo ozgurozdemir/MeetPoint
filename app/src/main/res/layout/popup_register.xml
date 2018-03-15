@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:paddingHorizontal="90dp"
+        />
+
+    <TextView
+        android:id="@+id/registerUsernameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Username:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        />
+
+    <EditText
+        android:id="@+id/registerUsername"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/login_input"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true"
+        android:maxLength="10"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Password:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/login_input"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Name:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        />
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/login_input"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true"
+        android:maxLength="25"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Mail:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/registerMail"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/login_input"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:maxLength="26"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Telephone number:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/registerTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/login_input"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:maxLength="11"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Office Telephone number:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/registerOffice"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/login_input"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:maxLength="11"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerTelephone"
+        android:text="*Please fill all inputs.\n  Username and password shouldn't be\n  longer than 10."/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/registerRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regıster"
+            android:layout_weight="50"
+            android:background="@color/background"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/registerCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_weight="50"
+            android:background="@color/background"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+
+</LinearLayout>
