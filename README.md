@@ -28,6 +28,5 @@ You have to use your own Google API Key for *Google Maps* in order to use select
 
 * *Özgür Özdemir* - [LinkedIn](https://www.linkedin.com/in/%C3%B6zg%C3%BCr-%C3%B6zdemir-668110144/)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details
+
